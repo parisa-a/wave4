@@ -17,9 +17,6 @@ def reverseLookup(user_dict, search_value):
     for values in user_dict.items():
         if values[1] == search_value:
             keys.append(values[0]) 
-    if keys == []:
-        return("None")
-    else:
-        return(keys)
+    return(keys)
 
 print(reverseLookup(user_dict, search_value))
